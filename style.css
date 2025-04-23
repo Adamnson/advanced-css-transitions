@@ -1,0 +1,86 @@
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+.row-1 {
+  display: flex;
+}
+
+.row-1 > * {
+  margin: 2rem;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+  background-color: red;
+  opacity: 1;
+  transition: opacity 1s 0.1s;
+}
+
+.circle:hover {
+  opacity: 0.5;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #0000ff;
+  transition:
+   width 2s,
+   height 2s,
+   backgroudn-color 2s,
+   rotate 2s;
+}
+
+.square:hover {
+  background-color: #ffcccc;
+  width: 90px;
+  height: 150px;
+  rotate: 90deg;
+}
+
+.row-2 > div {
+  /* font-size: 1.6rem;
+  padding: 20px; */
+  border: 3px solid red;
+  border-radius: 20px;
+  width: 480px;
+
+  display: none;
+  opacity: 0; 
+   transition: opacity 1s;
+  transition: display 1s allow-discrete;
+  /* Equivalent to
+  transition: all 1s allow-discrete; */
+}
+
+.showing {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+@starting-style {
+  .showing {
+    opacity: 0;
+  }
+}
