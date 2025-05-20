@@ -2,6 +2,11 @@ nav {
   display: flex;
   gap: 0.5rem;
 }
+div   {
+  padding-left: 5rem;
+  text-wrap: wrap;
+  max-width: 70%;
+}
 
 a {
   flex: 1;
@@ -29,9 +34,9 @@ a:focus {
 }
 
 .circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%; 
+  height: 15vw;
+  width: 15vh;
+  border-radius: 100%; 
   background-color: red;
   opacity: 1;
   transition: opacity 1s 0.1s;
@@ -60,8 +65,8 @@ a:focus {
 }
 
 .row-2 > div {
-  /* font-size: 1.6rem;
-  padding: 20px; */
+  font-size: 1.6rem;
+  padding: 20px;
   border: 3px solid red;
   border-radius: 20px;
   width: 480px;
@@ -83,4 +88,31 @@ a:focus {
   .showing {
     opacity: 0;
   }
+}
+
+span {
+  height: 10rem;
+  font-size:xx-large;
+  border-radius: 5px;
+  background-color: orange;
+  color: black;
+}
+
+code {
+  height: 7rem;
+  font-size: x-large;
+  background-color: grey;
+  border-radius: 72px;
+}
+
+.ball {
+  height: 10vw;
+  width: 10vh;
+  background-color: green;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
 }

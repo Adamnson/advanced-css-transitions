@@ -17,3 +17,14 @@ function sayHi() {
 function sayHello() {
   console.log("Hello");
 }
+
+// Make the ball move to a certain position:
+const f = document.getElementById("pong");
+document.addEventListener(
+  "click",
+  (ev) => {
+    f.style.transform = `translateY(${ev.clientY}px)`;
+    f.style.transform += `translateX(${ev.clientX}px)`;
+  },
+  false,
+);
