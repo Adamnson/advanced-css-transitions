@@ -145,8 +145,8 @@ code {
   }
 }
 
-.rotate-box {
-  animation: turn 0.7 ease-in-out both;
+.spin {
+  animation: turn 0.7s both;
 }
 
 @keyframes turn {

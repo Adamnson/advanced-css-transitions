@@ -14,11 +14,11 @@ let removeAnimateClass = () => {
 }
 
 rotate.addEventListener("click", () => {
-  box2.classList.add("rotate-box");
+  box2.classList.add("spin");
   box2.addEventListener('animationend', removeRotateClass);
 });
 
 let removeRotateClass = () => {
   box2.removeEventListener('animationend', removeRotateClass);
-  box2.classList.remove('rotate-box');
+  box2.classList.remove('spin');
 }
