@@ -116,3 +116,44 @@ code {
   left: 0;
   transition: transform 1s;
 }
+
+
+/**************************************************/
+/* PAGE 2 */
+/**************************************************/
+
+.blue-box {
+  height: 150px;
+  width: 150px;
+  background-color: #0000aa;
+  position: relative;
+  top: 10vh;
+  left: 30vw;
+  border-radius: 15px;
+}
+
+.animate {
+  animation: slide-in 0.7s both;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rotate-box {
+  animation: turn 0.7 ease-in-out both;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
