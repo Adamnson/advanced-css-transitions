@@ -170,3 +170,16 @@ code {
     transform: scale(1);
   }
 }
+
+.fadeAnimation {
+  animation: fade-in-out 0.7s both;
+}
+
+@keyframes fade-in-out {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
