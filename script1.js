@@ -1,9 +1,12 @@
 const box1 = document.getElementById("box1");
 const box2 = document.getElementById("box2");
-const down = document.getElementById("down");
-const rotate = document.getElementById("rotate");
+const box3 = document.getElementById("box3");
+const btn_down = document.getElementById("down");
+const btn_rotate = document.getElementById("rotate");
+const btn_scale = document.getElementById("scale");
 
-down.addEventListener("click", () => {
+/***********************************************************/
+btn_down.addEventListener("click", () => {
   box1.classList.add("animate");
   box1.addEventListener('animationend', removeAnimateClass)
 });
@@ -13,7 +16,8 @@ let removeAnimateClass = () => {
   box1.classList.remove('animate');
 }
 
-rotate.addEventListener("click", () => {
+/***********************************************************/
+btn_rotate.addEventListener("click", () => {
   box2.classList.add("spin");
   box2.addEventListener('animationend', removeRotateClass);
 });
@@ -22,3 +26,16 @@ let removeRotateClass = () => {
   box2.removeEventListener('animationend', removeRotateClass);
   box2.classList.remove('spin');
 }
+
+/***********************************************************/
+btn_scale.addEventListener("click", () => {
+  box3.classList.add("zoomAnimation");
+  box3.addEventListener('animationend', removeZoomAnimationClass)
+});
+
+let removeZoomAnimationClass = () => {
+  box3.classList.remove("zoomAnimation");
+  box3.removeEventListener('animationend', removeZoomAnimationClass)
+}
+
+

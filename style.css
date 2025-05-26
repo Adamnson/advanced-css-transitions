@@ -157,3 +157,16 @@ code {
     transform: rotate(360deg);
   }
 }
+
+.zoomAnimation {
+  animation: scale-down-up 0.7s both;
+}
+
+@keyframes scale-down-up {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
