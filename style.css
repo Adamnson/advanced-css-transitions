@@ -145,8 +145,8 @@ code {
   }
 }
 
-.rotate-box {
-  animation: turn 0.7 ease-in-out both;
+.spin {
+  animation: turn 0.7s both;
 }
 
 @keyframes turn {
@@ -155,5 +155,31 @@ code {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.zoomAnimation {
+  animation: scale-down-up 0.7s both;
+}
+
+@keyframes scale-down-up {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fadeAnimation {
+  animation: fade-in-out 0.7s both;
+}
+
+@keyframes fade-in-out {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
